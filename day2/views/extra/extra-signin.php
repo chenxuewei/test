@@ -26,21 +26,12 @@
 
 <body id="signin-page">
     <div class="page-form">
-        <form action="index.php?r=index/index" method="post" class="form">
+        <form action="index.php?r=extra/check_login" method="post" class="form">
             <input type="hidden" name="_csrf" value="<?php echo YII::$app->request->csrfToken;?>">
             <div class="header-content">
-                <h1>Log In</h1>
+                <h1>登 陆</h1>
             </div>
             <div class="body-content">
-                <p>Log in with a social network:</p>
-                <div class="row mbm text-center">
-                    <div class="col-md-4"><a href="#" class="btn btn-sm btn-twitter btn-block"><i class="fa fa-twitter fa-fw"></i>Twitter</a>
-                    </div>
-                    <div class="col-md-4"><a href="#" class="btn btn-sm btn-facebook btn-block"><i class="fa fa-facebook fa-fw"></i>Facebook</a>
-                    </div>
-                    <div class="col-md-4"><a href="#" class="btn btn-sm btn-google-plus btn-block"><i class="fa fa-google-plus fa-fw"></i>Google +</a>
-                    </div>
-                </div>
                 <div class="form-group">
                     <div class="input-icon right"><i class="fa fa-user"></i>
                         <input type="text" placeholder="Username" name="username" class="form-control">
@@ -54,21 +45,20 @@
                 <div class="form-group pull-left">
                     <div class="checkbox-list">
                         <label>
-                            <input type="checkbox">&nbsp; Keep me signed in</label>
+                            <input type="checkbox">&nbsp; 记住我的选择</label>
                     </div>
                 </div>
                 <div class="form-group pull-right">
-                    <button type="submit" class="btn btn-success">Log In &nbsp;
+                    <button type="submit" class="btn btn-success">登陆 &nbsp;
                         <i class="fa fa-chevron-circle-right"></i>
                     </button>
                 </div>
                 <div class="clearfix"></div>
                 <div class="forget-password">
-                    <h4>Forgotten your Password?</h4>
-                    <p>no worries, click <a href='#' class='btn-forgot-pwd'>here</a> to reset your password.</p>
+                    <h4>忘记密码?</h4>
+                    <p>别担心, 请点击 <a href='#' class='btn-forgot-pwd'>这里</a> 重置密码</p>
                 </div>
                 <hr>
-                <p>Don't have an account? <a id="btn-register" href="extra-signup.html">Register Now</a>
                 </p>
             </div>
         </form>

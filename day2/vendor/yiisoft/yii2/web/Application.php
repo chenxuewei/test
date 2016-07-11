@@ -25,7 +25,7 @@ class Application extends \yii\base\Application
     /**
      * @var string the default route of this application. Defaults to 'site'.
      */
-    public $defaultRoute = 'extra/login';
+    public $defaultRoute = 'install';
     /**
      * @var array the configuration specifying a controller action which should handle
      * all user requests. This is mainly used when the application is in maintenance mode

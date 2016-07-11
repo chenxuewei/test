@@ -48,6 +48,7 @@ $config = [
         */
     ],
     'params' => $params,
+    'language' => 'zh_cn',
 ];
 
 if (YII_ENV_DEV) {
